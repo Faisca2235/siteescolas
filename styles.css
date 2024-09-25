@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #003366; /* Azul escuro institucional */
+    border-bottom: 3px solid #555555; /* Cinza escuro */
+}
+
+.logo {
+    width: 180px;
+}
+
+.schools {
+    padding: 40px;
+    background-color: #ffffff; /* Fundo branco */
+    text-align: center;
+    flex: 1;
+}
+
+.schools h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #003366; /* Azul escuro para o título */
+}
+
+.school-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: center; /* Centraliza os itens */
+}
+
+.school {
+    background-color: #555555; /* Cinza escuro */
+    color: #ffffff; /* Branco para o texto dos botões */
+    padding: 30px;
+    margin: 15px;
+    width: calc(30% - 30px); /* 30% da largura menos margens */
+    height: 100px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.school:hover {
+    background-color: #333333; /* Cinza ainda mais escuro no hover */
+    transform: scale(1.05);
+}
+
+.map {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff; /* Fundo branco */
+}
+
+.map h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #003366; /* Azul escuro */
+}
+
+#map {
+    width: 100%;
+    height: 400px; /* Tamanho do Google Maps */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #003366; /* Azul escuro */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #555555; /* Linha cinza escura */
+}
+
+@media (max-width: 768px) {
+    .school {
+        width: 80%; /* Ajuste para telas menores */
+    }
+
+    #map {
+        height: 300px; /* Altura menor para telas menores */
+    }
+}

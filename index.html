@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolas - Site Escolar da Prefeitura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo-prefeitura.png" alt="Logo Prefeitura" class="logo">
+    </header>
+
+    <section class="schools">
+        <h2>Escolas Municipais</h2>
+        <div class="school-container">
+            <div class="school" onclick="redirectTo('escola1')">Escola 1</div>
+            <div class="school" onclick="redirectTo('escola2')">Escola 2</div>
+            <div class="school" onclick="redirectTo('escola3')">Escola 3</div>
+            <div class="school" onclick="redirectTo('escola4')">Escola 4</div>
+            <div class="school" onclick="redirectTo('escola5')">Escola 5</div>
+            <div class="school" onclick="redirectTo('escola6')">Escola 6</div>
+            <div class="school" onclick="redirectTo('escola7')">Escola 7</div>
+            <div class="school" onclick="redirectTo('escola8')">Escola 8</div>
+            <div class="school" onclick="redirectTo('escola9')">Escola 9</div>
+        </div>
+    </section>
+
+    <section class="map">
+        <h2>Localização das Escolas</h2>
+        <div id="map"></div> <!-- Google Maps será integrado aqui -->
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Prefeitura - Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>
